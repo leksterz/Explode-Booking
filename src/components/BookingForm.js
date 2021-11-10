@@ -1,7 +1,6 @@
 import React from "react";
-import GalleryImage from "./GalleryImage";
 
-export default function Gallery() {
+export default function BookingForm() {
   //availability data model
   const availability = [{ gianni: { 0: 1 } }, { jc: { 0: 1 } }];
 
