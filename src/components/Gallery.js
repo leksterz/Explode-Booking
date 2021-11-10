@@ -10,7 +10,7 @@ export default function Gallery() {
   return (
     <div className="container">
       <div className="title">
-        <h1>Explode Booking</h1>
+        <h1>Explode Bookings</h1>
         <h4>select the engineer and desired time</h4>
       </div>
       <form className="selection">
