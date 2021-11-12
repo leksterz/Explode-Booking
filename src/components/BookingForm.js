@@ -1,10 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
 
 export default function BookingForm() {
   //availability data model
   const availability = [{ gianni: { 0: 1 } }, { jc: { 0: 1 } }];
 
   //request data model
+
+  // pass engineers into the dropdown
+  // first regular data, then with props
+
+  // date declared with useState and
+  // DatePicker is npm installed
+  const [startDate, setStartDate] = useState(new Date());
 
   return (
     <div className="container">
@@ -16,10 +25,16 @@ export default function BookingForm() {
       </div>
       <form className="selection">
         <label> engineer</label>
-        <select name="engineer" id="engineer"></select>
+        <select name="engineer" id="engineer">
+          <option value="pricey">pricey</option>
+          <option value="gianni">gianni</option>
+        </select>
         <br />
-        <label> date</label>
-        <input type="date" name="date" id="date"></input>
+        <DatePicker
+          selected={startDate}
+          onChange={(date) => setStartDate(date)}
+        />
+
         <br />
         <label> start time</label>
         <input type="time" name="start" id="start"></input>
