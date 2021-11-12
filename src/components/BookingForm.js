@@ -12,7 +12,8 @@ export default function BookingForm() {
   // first regular data, then with props
 
   // date declared with useState and
-  // DatePicker is npm installed
+  // DatePicker is npm installed. Specify params:
+  // min-date, max date and onChange = setDate from state
   const [startDate, setStartDate] = useState(new Date());
 
   return (
@@ -32,6 +33,8 @@ export default function BookingForm() {
         <br />
         <DatePicker
           selected={startDate}
+          minDate={new Date()}
+          maxDate={new Date() + 7}
           onChange={(date) => setStartDate(date)}
         />
 
