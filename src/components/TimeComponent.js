@@ -24,6 +24,7 @@ export default class TimeComponent extends Component {
         onEndTimeChange={this.returnFunctionEnd}
         startMoment={this.state.startTime}
         endMoment={this.state.endTime}
+        minuteIncrement={60}
       />
     );
   }
