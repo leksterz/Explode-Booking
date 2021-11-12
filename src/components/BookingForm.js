@@ -4,6 +4,7 @@ import "react-datepicker/dist/react-datepicker.css";
 import { addDays } from "date-fns";
 import TimeRange from "react-time-range";
 import moment from "moment";
+import TimeComponent from "./TimeComponent";
 
 export default function BookingForm({ children }) {
   //availability data model
@@ -45,11 +46,7 @@ export default function BookingForm({ children }) {
           onChange={(date) => setStartDate(date)}
         />
         <br />
-        <TimeRange
-          startMoment={value.startTime}
-          endMoment={value.endTime}
-          minuteIncrement={60}
-        />
+        <TimeComponent />
 
         <br />
         <br />
