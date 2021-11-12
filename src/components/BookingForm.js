@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
+import { addDays } from "date-fns";
 
 export default function BookingForm() {
   //availability data model
@@ -34,7 +35,7 @@ export default function BookingForm() {
         <DatePicker
           selected={startDate}
           minDate={new Date()}
-          maxDate={new Date() + 7}
+          maxDate={addDays(new Date(), 10)}
           onChange={(date) => setStartDate(date)}
         />
 
