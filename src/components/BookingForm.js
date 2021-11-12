@@ -53,8 +53,8 @@ export default function BookingForm({ children }) {
         <select name="hours" id="hours"></select>
         <br />
         <br />
-        <button>submit your request</button>
-        
+        <button>submit your requests</button>
+
       </form>
     </div>
   );
