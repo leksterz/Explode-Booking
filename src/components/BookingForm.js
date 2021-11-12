@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import { addDays } from "date-fns";
+import TimeRange from "react-time-range";
+import moment from "moment";
 
 export default function BookingForm({ children }) {
   //availability data model
@@ -20,10 +22,6 @@ export default function BookingForm({ children }) {
   //time picker useState
   // define min and max date + onChange
   const [value, setValue] = React.useState(new Date("2014-08-18T21:11:54"));
-
-  const handleChange = (newValue) => {
-    setValue(newValue);
-  };
 
   return (
     <div className="container">
@@ -47,14 +45,13 @@ export default function BookingForm({ children }) {
           onChange={(date) => setStartDate(date)}
         />
         <br />
-
+        <TimeRange startMoment={value.startTime} endMoment={value.endTime} />
         <br />
         <label> number of hours</label>
         <select name="hours" id="hours"></select>
         <br />
         <br />
         <button>submit your requests</button>
-
       </form>
     </div>
   );
