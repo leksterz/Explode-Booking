@@ -40,14 +40,15 @@ export default function BookingForm() {
         />
 
         <br />
-        <label> start time day</label>
+        <label> start time</label>
         <input type="time" name="start" id="start"></input>
         <br />
         <label> number of hours</label>
         <select name="hours" id="hours"></select>
         <br />
         <br />
-        <button>submit your request</button>
+        <button>submit your jolly request</button>
+        
       </form>
     </div>
   );
