@@ -45,10 +45,12 @@ export default function BookingForm({ children }) {
           onChange={(date) => setStartDate(date)}
         />
         <br />
-        <TimeRange startMoment={value.startTime} endMoment={value.endTime} />
-        <br />
-        <label> number of hours</label>
-        <select name="hours" id="hours"></select>
+        <TimeRange
+          startMoment={value.startTime}
+          endMoment={value.endTime}
+          minuteIncrement={60}
+        />
+
         <br />
         <br />
         <button>submit your requests</button>
