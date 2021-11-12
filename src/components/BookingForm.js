@@ -47,7 +47,7 @@ export default function BookingForm() {
         <select name="hours" id="hours"></select>
         <br />
         <br />
-        <button>submit your jolly request</button>
+        <button>submit your request</button>
         
       </form>
     </div>
