@@ -40,7 +40,7 @@ export default function BookingForm() {
         />
 
         <br />
-        <label> start time statttt</label>
+        <label> start time statt</label>
         <input type="time" name="start" id="start"></input>
         <br />
         <label> number of hours</label>
