@@ -6,7 +6,7 @@ import TimeRange from "react-time-range";
 export default class TimeComponent extends Component {
   state = {
     startTime: moment().startOf("hour").add(14, "hour"),
-    endTime: moment().startOf("hour").add(24, "hour"),
+    endTime: moment().startOf("hour").add(15, "hour"),
   };
 
   returnFunctionStart = (event) => {
