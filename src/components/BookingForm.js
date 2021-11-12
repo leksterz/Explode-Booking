@@ -11,8 +11,8 @@ export default function BookingForm() {
       <div className="title">
         <h1>Explode Bookings</h1>
         <h3>fill out the form and we will be in touch</h3>
-        <h4>start by select the engineer and the date</h4>
-        <h4>if no start hour is unavailable, choose another day</h4>
+        <p>start by select the engineer and the date</p>
+        <p>if no start hour is unavailable, choose another day</p>
       </div>
       <form className="selection">
         <label> engineer</label>
