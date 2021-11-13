@@ -3,6 +3,8 @@ import React, { Component } from "react";
 import moment from "moment";
 import TimeRange from "react-time-range";
 
+console.log(TimeRange);
+
 export default class TimeComponent extends Component {
   state = {
     startTime: moment().startOf("hour").add(14, "hour"),
